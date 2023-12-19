@@ -43,7 +43,7 @@ class HighwayEnv(AbstractEnv):
                 "ego_spacing": 2,
                 "vehicles_density": 1,
                 "collision_reward": -1,  # The reward received when colliding with a vehicle.
-                "right_lane_reward": 0.1,  # The reward received when driving on the right-most lanes, linearly mapped to
+                "right_lane_reward": 1,  # The reward received when driving on the right-most lanes, linearly mapped to
                 # zero for other lanes.
                 # edited high speed reward from 0.4
                 "high_speed_reward": 0.6,  # The reward received when driving at full speed, linearly mapped to zero for
