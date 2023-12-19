@@ -48,7 +48,7 @@ class HighwayEnv(AbstractEnv):
                 # edited high speed reward from 0.4
                 "high_speed_reward": 0.6,  # The reward received when driving at full speed, linearly mapped to zero for
                 # lower speeds according to config["reward_speed_range"].
-                "lane_change_reward": -1,  # The reward received at each lane change action.
+                "lane_change_reward": -5,  # The reward received at each lane change action.
                 "reward_speed_range": [20, 30],
                 "normalize_reward": True,
                 "offroad_terminal": False,
