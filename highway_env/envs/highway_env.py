@@ -11,7 +11,12 @@ from highway_env.vehicle.controller import ControlledVehicle
 from highway_env.vehicle.kinematics import Vehicle
 
 Observation = np.ndarray
-
+#########################################################################
+#									#
+#	    Note to Alexander: This is the github repository 	 	#
+# 		  connectected to github deskstop			#
+#									#
+#########################################################################
 
 class HighwayEnv(AbstractEnv):
     """
