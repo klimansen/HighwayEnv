@@ -43,12 +43,12 @@ class HighwayEnv(AbstractEnv):
                 "ego_spacing": 2,
                 "vehicles_density": 1,
                 "collision_reward": -1,  # The reward received when colliding with a vehicle.
-                "right_lane_reward": 1,  # The reward received when driving on the right-most lanes, linearly mapped to
+                "right_lane_reward": 10,  # The reward received when driving on the right-most lanes, linearly mapped to
                 # zero for other lanes.
                 # edited high speed reward from 0.4
-                "high_speed_reward": 0.6,  # The reward received when driving at full speed, linearly mapped to zero for
+                "high_speed_reward": 0,  # The reward received when driving at full speed, linearly mapped to zero for
                 # lower speeds according to config["reward_speed_range"].
-                "lane_change_reward": -5,  # The reward received at each lane change action.
+                "lane_change_reward": -100,  # The reward received at each lane change action.
                 "reward_speed_range": [20, 30],
                 "normalize_reward": True,
                 "offroad_terminal": False,
