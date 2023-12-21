@@ -13,7 +13,7 @@ from highway_env.vehicle.kinematics import Vehicle
 Observation = np.ndarray
 #########################################################################
 #									#
-#	    Note to Alexander: This is the github repository 	 	#
+#	    Note to klimansen: This is the github repository 	 	#
 # 		  connectected to github deskstop			#
 #									#
 #########################################################################
