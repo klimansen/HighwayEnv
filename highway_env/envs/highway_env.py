@@ -35,13 +35,13 @@ class HighwayEnv(AbstractEnv):
                 "action": {
                     "type": "DiscreteMetaAction",
                 },
-                "lanes_count": 1,
+                "lanes_count": 2,
                 "vehicles_count": 0,
                 "controlled_vehicles": 1,
-                "initial_lane_id": 0,
+                "initial_lane_id": None,
                 "duration": 40,  # [s]
                 "ego_spacing": 2,
-                "vehicles_density": 1,
+                "vehicles_density": 0,
                 "collision_reward": -1,  # The reward received when colliding with a vehicle.
                 "right_lane_reward": 0.1,  # The reward received when driving on the right-most lanes, linearly mapped to
                 # zero for other lanes.
