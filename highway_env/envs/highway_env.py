@@ -112,7 +112,7 @@ class HighwayEnv(AbstractEnv):
                 reward,
                 [
                     self.config["collision_reward"],
-                    self.config["high_speed_reward"] + self.config["right_lane_reward"],
+                    self.config["high_speed_reward"] + self.config["right_lane_reward"] + self.config["lane_change_reward"],
                 ],
                 [0, 1],
             )
