@@ -133,14 +133,13 @@ class HighwayEnv(AbstractEnv):
         scaled_speed = utils.lmap(
             forward_speed, self.config["reward_speed_range"], [0, 1]
         )
-        lane_change_reward = self.config["lane_change_reward"] if action == Action.LANE_LEFT or action == Action.LANE_RIGHT else 0
-
+       
         return {
             "collision_reward": float(self.vehicle.crashed),
             "right_lane_reward": lane / max(len(neighbours) - 1, 1),
             "high_speed_reward": np.clip(scaled_speed, 0, 1),
             "on_road_reward": float(self.vehicle.on_road),
-            "lane_Change_reward": lane_change_reward,
+            "lane_change_reward": action in [0, 2],
         }
 
     def _is_terminated(self) -> bool:
